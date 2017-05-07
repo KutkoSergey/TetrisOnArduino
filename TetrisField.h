@@ -14,6 +14,11 @@ public:
   int getWidthField();
   int getHeightField();
   TetrisItem * getTetrisItem();
+  bool isNullTetrisItem();
+  void doStep();
+  bool hasCollisions(TetrisItem * item) ;
+  bool hasCollisions(int xPoints, int yPoints) ;
+  int getBlockType (int xBlocks, int yBlocks) ;
   
 };
 

@@ -43,10 +43,13 @@ void setup()
   strip.show();
 }
 
+int fps = 1000;
 void loop()
 { 
-  tetrisField->getTetrisItem()->generateRandomItem();
+  /*tetrisField->getTetrisItem()->generateRandomItem();
   tetrisField->getTetrisItem()->setPosition(105, 15);
+  ;*/
+  tetrisField->doStep();
   drawFieldMatrix(tetrisField->getFieldMatrix());
   delay(1000);
 }

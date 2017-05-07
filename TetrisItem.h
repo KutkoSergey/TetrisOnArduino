@@ -21,6 +21,6 @@ public:
   int getBlockType(int innerXBlock, int innerYBlock);
   int getBlockXCoordinate(int innerXBlock);
   int getBlockYCoordinate(int innerYBlock);
- 
+  
 };
 
