@@ -50,9 +50,9 @@ void TetrisField::doStep()
     tetrisItem = new TetrisItem();
     tetrisItem->setPosition(105, 5);
   }
-  tetrisItem->setPosition(tetrisItem->getXCoordinate(), tetrisItem->getYCoordinate() + 10);
-  if(tetrisItem->getYCoordinate() == 65)
-    tetrisItem = NULL;
+  //tetrisItem->setPosition(tetrisItem->getXCoordinate(), tetrisItem->getYCoordinate() + 10);
+  /*if(tetrisItem->getYCoordinate() == 65)
+    tetrisItem = NULL;*/
 
   TetrisItem *tempItem = tetrisItem;
   tempItem->setPosition (tetrisItem->getXCoordinate(), tetrisItem->getYCoordinate() + 10);  
